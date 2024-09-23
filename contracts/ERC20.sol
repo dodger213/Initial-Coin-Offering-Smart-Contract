@@ -2,7 +2,6 @@
 pragma solidity ^0.8.0;
 import "./Context.sol";
 
-
 interface IERC20 {
     /**
      * @dev Returns the amount of tokens in existence.
