@@ -159,7 +159,7 @@ interface IUniswapV2Router01 {
     function swapTokensForExactETH(uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
         external
         returns (uint[] memory amounts);
-        
+
     function swapExactTokensForETH(uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
         external
         returns (uint[] memory amounts);
@@ -184,6 +184,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
         address to,
         uint deadline
     ) external returns (uint amountETH);
+
     function removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(
         address token,
         uint liquidity,
@@ -201,12 +202,14 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
         address to,
         uint deadline
     ) external;
+
     function swapExactETHForTokensSupportingFeeOnTransferTokens(
         uint amountOutMin,
         address[] calldata path,
         address to,
         uint deadline
     ) external payable;
+    
     function swapExactTokensForETHSupportingFeeOnTransferTokens(
         uint amountIn,
         uint amountOutMin,
