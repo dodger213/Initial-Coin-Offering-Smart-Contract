@@ -63,6 +63,7 @@ abstract contract Whitelist is Context {
      */
     function _enableWhitelist() internal virtual whenDisabledWhitelist {
         _whitelist = true;
+        
         emit EnableWhitelist(_msgSender());
     }
 
@@ -75,6 +76,7 @@ abstract contract Whitelist is Context {
      */
     function _disableWhitelist() internal virtual whenEnabledWhitelist {
         _whitelist = false;
+
         emit DisableWhitelist(_msgSender());
     }
 }
