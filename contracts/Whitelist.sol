@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
+
 import "./Context.sol";
 
 abstract contract Whitelist is Context {
@@ -63,7 +64,7 @@ abstract contract Whitelist is Context {
      */
     function _enableWhitelist() internal virtual whenDisabledWhitelist {
         _whitelist = true;
-        
+
         emit EnableWhitelist(_msgSender());
     }
 
