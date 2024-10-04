@@ -81,3 +81,4 @@ abstract contract Whitelist is Context {
         emit DisableWhitelist(_msgSender());
     }
 }
+

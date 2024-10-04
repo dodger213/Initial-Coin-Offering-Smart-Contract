@@ -234,7 +234,6 @@ abstract contract ERC20 is IERC20, IERC20Metadata, Context {
      *
      * This is an alternative to {approve} that can be used as a mitigation for
      * problems described in {IERC20-approve}.
-     *
      * Emits an {Approval} event indicating the updated allowance.
      *
      * Requirements:
